@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './card.css'
 
-function Card({imagem, title, description}) {
+function Card({ title, description, background, link}) {
   return (
-    <div className="card">
+    <a href={link} className="card" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover' }}>
       <strong className="title">{title}</strong>
-      <img className="imagem-card" src={imagem} alt="icone" />
-      <small className="description">{description}</small>
-    </div>
+      <p className="description">{description}</p>
+    </a>
+    
   )
 }
 
