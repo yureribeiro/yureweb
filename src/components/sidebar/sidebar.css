@@ -1,0 +1,76 @@
+.sidebar {
+  height: 100%;
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: #041c323a;
+  border-radius: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* perfil */
+.content-perfil {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5rem;
+  background-color: #ECB365;
+  border-radius: .5rem;
+  box-shadow: .1rem .1rem .3rem #000;
+  margin: 1rem 0;
+}
+
+.foto-perfil {
+  border-radius: 99%;
+  width: 2.5rem;
+  box-shadow: 0 .15rem .2rem #000;
+}
+
+.name-perfil {
+  color: #000;
+  font-size: .95rem;
+  font-weight: bold;
+}
+
+small {
+  font-size: .8rem;
+  font-weight: bold;
+  color: #041C32;
+}
+
+/* links menu */
+.nav {
+  width: 100%;
+  min-width: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  border-radius: .5rem;
+}
+
+.link {
+  background-color: #ecb465;
+  display: flex;
+  align-items: center;
+  padding-left: .5rem;
+  gap: .5rem;
+  text-decoration: none;
+  color: #000;
+  font-size: .95rem;
+  font-weight: bold;
+  box-shadow: 0 .1rem .07rem #000;
+  padding: .4rem;
+  border-radius: .5rem;
+  transition: .4s;
+} 
+
+.link:hover {
+  background-color: #ecb4658f;;
+  color: #fff;
+}
+
+ .link img {
+  width: 1.3rem;
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica;
+}
+
+.App {
+  min-width: 960px;
+  height: 100vh;
+  padding: 2.5rem;
+  background: linear-gradient(170deg, #04293A 20%, #ECB365 70%);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  background-color:#041c329a;
+  border-radius: 1rem;
+}
