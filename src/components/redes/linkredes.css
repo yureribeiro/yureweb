@@ -1,0 +1,63 @@
+.containerRedesELinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.titleContainerRedes {
+  color: #ECB365;
+  margin-bottom: 1rem;
+}
+
+.divLinks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.containerRedes {
+  display: flex;
+  flex-direction: column;
+  border: .1rem solid #a7a7a73c;
+  border-radius: .5rem;
+  box-shadow: .1rem .1rem .4rem #0000009c;
+  background-color: #06466324;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  gap: .5rem;
+}
+
+.contentTitle {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  justify-content: flex-start;
+}
+
+.titleRedes {
+  color: #ECB365;
+}
+
+.descriptionRedes {
+  color: #fff;
+}
+
+.linkRedes {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #0646637d;
+  padding: .3rem;
+  border-radius: .5rem;
+  box-shadow: .1rem .1rem .2rem #0000006b;
+  color: #e8a548;
+  width: 40%;
+  transition: .4s;
+} .linkRedes:hover {
+  background-color: #ba8234;
+  color: #000;
+}

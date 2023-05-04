@@ -20,3 +20,8 @@
   background-color:#041c329a;
   border-radius: 1rem;
 }
+
+.content {
+  width: 100%;
+  height: 100%;
+}
