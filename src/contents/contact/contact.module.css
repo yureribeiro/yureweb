@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  color: #e8a548;
+  margin-bottom: 1rem;
+}
+
+.form {
+  border: .1rem solid #a7a7a73c;
+  border-radius: .5rem;
+  box-shadow: .1rem .1rem .4rem #0000009c;
+  background-color: #06466324;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  gap: .5rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.label {
+  color: #fff;
+}
+
+.input {
+  outline: none;
+  color: #fff;
+  background-color: #06466324;
+  border: .1rem solid #bfbfbf63;
+  border-radius: .5rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  max-height: 10rem;
+  min-width: 100%;
+}
+
+.buttonsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #0646637d;
+  padding: .43rem 3rem;
+  border-radius: .5rem;
+  box-shadow: .1rem .1rem .2rem #0000006b;
+  color: #e8a548;
+  font-weight: bold;
+  transition: .4s;
+} .button:hover {
+  background-color: #ba8234;
+  color: #000;
+}
+
+.buttonWpp {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background-color: #0646637d;
+  color: #e8a548;
+  box-shadow: .1rem .1rem .2rem #0000006b;
+  font-weight: bold;
+  border: none;
+  border-radius: .5rem;
+  padding: .3rem 1rem;
+  transition: .4s;
+} .buttonWpp:hover {
+  background-color: #ba8234;
+  color: #000;
+}
+
+.imageWpp {
+  width: 1.3rem;
+}

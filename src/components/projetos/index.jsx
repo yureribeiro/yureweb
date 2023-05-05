@@ -2,7 +2,7 @@ import React from "react";
 
 function Projetos () {
  return (
-  <section>
+  <section className="container">
     <div>
       projeto 1
     </div>

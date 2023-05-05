@@ -19,7 +19,7 @@ function App() {
 
         <main className='content'>
           <Routes>
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/desksetup" element={<DeskSetup />} />
             <Route path="/redes" element={<Redes />} />

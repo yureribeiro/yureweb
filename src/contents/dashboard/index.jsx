@@ -10,32 +10,32 @@ import './dashboard.css'
 function Dashboard() {
   return (
     <>
- <section className="cards">
-  <Card
-    title={'Sites e Aplicativos'}
-    description={'Meus Principais projetos WEB e MOBILE'}
-    background={projects}
-    link={'/projects'}
-  />
-  <Card
-    title={'Desk Setup'}
-    description={'Componentes e links do meu setup de mesa'}
-    background={setup}
-    link={'/desksetup'}
-  />
-  <Card
-    title={'Redes Sociais'}
-    description={'Linkedin, canal no youtube, instagram e mais... '}
-    background={social}
-    link={'/redes'}
-  />
-  <Card
-    title={'Contato'}
-    description={'Fale comigo para serviços e mais...'}
-    background={contato}
-    link={'/contact'}
-  />
-</section>
+      <section className="cards">
+        <Card
+          title={'Sites e Aplicativos'}
+          description={'Meus Principais projetos WEB e MOBILE'}
+          background={projects}
+          link={'/projects'}
+        />
+        <Card
+          title={'Redes Sociais'}
+          description={'Linkedin, canal no youtube, instagram e mais... '}
+          background={social}
+          link={'/redes'}
+        />
+        <Card
+          title={'Contato'}
+          description={'Email comercial para serviços e mais'}
+          background={contato}
+          link={'/contact'}
+        />
+        <Card
+          title={'Desk Setup'}
+          description={'Componentes e links do meu setup de mesa'}
+          background={setup}
+          link={'/desksetup'}
+        />
+      </section>
     </>
   )
 }
