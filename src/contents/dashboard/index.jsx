@@ -4,13 +4,13 @@ import setup from '../../assets/card-setup.jpg'
 import projects from '../../assets/card-projetos.jpg'
 import social from '../../assets/socialmidias.jpg'
 import contato from '../../assets/contato.jpg'
-import './dashboard.css'
+import styles from './dashboard.module.css'
 
 
 function Dashboard() {
   return (
     <>
-      <section className="cards">
+      <section className={styles.cards}>
         <Card
           title={'Sites e Aplicativos'}
           description={'Meus Principais projetos WEB e MOBILE'}

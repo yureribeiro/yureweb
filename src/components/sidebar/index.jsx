@@ -7,6 +7,7 @@ import envelope from '../../assets/envelope.svg'
 import desk from '../../assets/desksetup.svg'
 import dev from '../../assets/dev.svg'
 import globe from  '../../assets/globe.svg'
+import vscodeIcon from '../../assets/vscode-icon.svg'
 import { Link } from "react-router-dom";
 
 function Sidebar () {
@@ -40,7 +41,7 @@ function Sidebar () {
       <nav className="nav">
         <Link 
           className="link" 
-          to="/dashboard"
+          to="/"
           >
           <img src={home} alt="icone-home" />
           Início
@@ -59,6 +60,13 @@ function Sidebar () {
           >
           <img src={dev} alt="developer-icone" />
           Projetos
+        </Link>
+        <Link
+          className="link" 
+          to="/vsthemes"
+          >
+          <img src={vscodeIcon} alt="paint-icone" />
+          VSCode
         </Link>
         <Link
           className="link" 
@@ -81,6 +89,7 @@ function Sidebar () {
           <img src={envelope} alt="globe-icone" />
           Contato
         </Link>
+        {/* vsthemes */}
       </nav>
 
 

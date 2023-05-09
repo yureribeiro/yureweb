@@ -1,0 +1,28 @@
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: .1rem solid #a7a7a73c;
+  border-radius: .5rem;
+  box-shadow: .1rem .1rem .4rem #0000009c;
+  background-color: #06466324;
+  padding: 1rem;
+  gap: .5rem;
+}
+
+.title {
+  color: #e8a548;
+  text-shadow: .1rem .1rem .2rem #000;
+}
+
+.description {
+  color: #d3d3d3;
+}
+
+
+.image {
+  width: 100%;
+  border-radius: .7rem;
+  box-shadow: .1rem .1rem .2rem #000;
+}

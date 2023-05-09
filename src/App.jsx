@@ -7,7 +7,7 @@ import Projects from './contents/projects'
 import DeskSetup from './contents/desksetup'
 import Redes from './contents/redes'
 import Contact from './contents/contact'
-
+import VSthemes from './contents/vsThemes'
 import './App.css'
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
             <Route path="/desksetup" element={<DeskSetup />} />
             <Route path="/redes" element={<Redes />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/vsthemes" element={<VSthemes />} />
           </Routes>
         </main>
 

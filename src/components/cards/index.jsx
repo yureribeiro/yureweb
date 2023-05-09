@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import './card.css'
+import styles from './card.module.css'
 
 function Card({ title, description, background, link}) {
   return (
-    <a href={link} className="card" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover' }}>
-      <strong className="title">{title}</strong>
-      <p className="description">{description}</p>
+    <a href={link} className={styles.card} style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover'}}>
+      <strong className={styles.title}>{title}</strong>
+      <p className={styles.description}>{description}</p>
     </a>
     
   )
