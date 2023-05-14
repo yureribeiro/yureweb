@@ -21,12 +21,12 @@ const VSthemes = () => {
         <section className={styles.section}>
           <Extencion 
           title={'Rosé Pine'}
-          description={'Meu tema atual do vsCode, não e muito colorido deixando o código até mais clean visualmente.'}
+          description={'Meu tema atual do vsCode, menos cores deixando o código até mais clean visualmente.'}
           image={rosePine}
           />
           <Extencion 
           title={'One Dark Pro'}
-          description={'Outro tema que utilizei bastante no vsCode, bom para quem está aprendendo ele, ajuda a identificar o que cada string significa no código.'}
+          description={'Tem cores fortes, ajuda a identificar o que cada escrita significa no código.'}
           image={oneDarkPro}
           />
       </section>
@@ -35,19 +35,19 @@ const VSthemes = () => {
         <section className={styles.section}>
           <Extencion 
           title={'Console Ninja'}
-          description={'Extensão muito interessante para não precisar ir no Browser para ver os console.logs e erros. É dos mesmos criadores do Quokka.js, porém ainda está em base beta e sem recursos "PROs".'}
+          description={'Seus console.logs vão aparecer no próprio código, assim não precisando ir no Browser e inspecionar para  ver os console.logs e erros.'}
           image={consoleNinja}
         />
           <Extencion 
           title={'Total TypeScript'}
-          description={'Extensão muito boa para Typescript, ajudar a entender aqueles erros super genéricos. Além de ajudar de ensinar a sintaxe do Typescript.'}
+          description={'Além de ajudar a ensinar a sintaxe do Typescript, ajudar a entender aqueles erros super genéricos.'}
           image={totalTypeScript}
           />
         </section>
         <section className={styles.section}>
           <Extencion 
           title={'Image Preview'}
-          description={'Image preview mostra uma pré-visualização de imagens de urls assim como imagens importadas da máquina do usuário, dessa forma nos ajuda a evitar links quebrados ou importar imagens que não existem.'}
+          description={'Mostra uma pré-visualização de imagens de urls assim como imagens importadas da máquina do usuário, dessa forma nos ajuda a evitar links quebrados ou importar imagens que não existem.'}
           image={imagePreview}
           />
           <Extencion 

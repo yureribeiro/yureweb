@@ -9,11 +9,11 @@ function Contact () {
   const [message, setMessage] = useState('')
 
   function sendEmail(e) {
-    e.preventDefault();
+    e.preventDefault()
 
     if(name === '' || email === '' || message === '') {
-      alert("Preencha todos os campos");
-      return;
+      alert("Preencha todos os campos")
+      return
     }
 
     const templateParams = {
