@@ -33,9 +33,6 @@ function Contact () {
     })
   }
 
-  function handleNavigateWpp() {
-    console.log('navegando pro wpp')
-  }
 
   return (
     <section className={styles.container}>
@@ -62,7 +59,7 @@ function Contact () {
       />
       <label className={styles.label}>Mensagem</label>
       <textarea 
-      className={styles.input}
+      className={styles.textArea}
       type="text" 
       placeholder="Digite sua mensagem"
       name="message" 
@@ -76,16 +73,19 @@ function Contact () {
           type='submit' 
           value='Enviar'
           />
-          <button
-            className={styles.buttonWpp}
-            onClick={handleNavigateWpp}
-            >WhatsApp
+          
+            <a 
+            href="https://wa.me/message/IVLV4RSMIJ7WO1" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className={styles.buttonWpp}> 
               <img 
               className={styles.imageWpp} 
               src={wpplogo} 
               alt="whatsapp"
               />
-          </button>
+              WhatsApp
+              </a>
       </div>
      
     </form>
