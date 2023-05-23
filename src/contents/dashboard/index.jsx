@@ -5,6 +5,7 @@ import projects from '../../assets/card-projetos.jpg'
 import social from '../../assets/socialmidias.jpg'
 import contato from '../../assets/contato.jpg'
 import styles from './dashboard.module.css'
+import GithubStates from "../../components/github";
 
 
 function Dashboard() {
@@ -35,6 +36,9 @@ function Dashboard() {
           background={setup}
           link={'/desksetup'}
         />
+      </section>
+      <section>
+        <GithubStates />
       </section>
     </>
   )
