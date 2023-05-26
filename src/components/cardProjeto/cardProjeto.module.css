@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+
+.titleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #FFD369;
+    padding: 1rem;
+    font-size: 4rem;
+}
+
+.link {
+    box-shadow: .1rem .1rem .4rem #0000009c;
+    background-color: #06466331;
+    text-decoration: none;
+    color: #FFD369;
+    font-size: 1.2rem;
+    border: .1rem solid #ffffff3a;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.imageContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image {
+    width: 60%;
+}
+
+.description {
+    color: #ffff;
+    font-size: 1.2rem;
+}
+
+
