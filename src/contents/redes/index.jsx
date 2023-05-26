@@ -2,7 +2,7 @@ import React from 'react'
 import youtubelogo from '../../assets/youtube-logo.svg'
 import linkedinlogo from '../../assets/linkedin-logo.svg'
 import instagramlogo from '../../assets/instagram-logo.svg'
-import githublogo from '../../assets/github-logo-orang.svg'
+import githublogo from '../../assets/github-logo.svg'
 import LinkRedes from '../../components/redes'
 
 function Redes () {

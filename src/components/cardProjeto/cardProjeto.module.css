@@ -18,6 +18,11 @@
     font-size: 4rem;
 }
 
+.tech {
+    color: #ffff;
+    margin-bottom: 1rem;
+}
+
 .link {
     box-shadow: .1rem .1rem .4rem #0000009c;
     background-color: #06466331;

@@ -22,6 +22,7 @@
 .containerRedes {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border: .1rem solid #a7a7a73c;
   border-radius: .5rem;
   box-shadow: .1rem .1rem .4rem #0000009c;
