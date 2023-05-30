@@ -20,11 +20,21 @@ function Projects () {
     },
     {
       title: "QRcodee",
+      tech: "React - qrcode.react ",
       description:
         "Gerador de QRcode, basta inserir o texto ou link no input, será gerado um QR para download em PNG para compartilhar com quem quiser.",
       image: QRcode,
       link: "https://qrcodee.vercel.app",
       titleLink: "Acesse QRcodee aqui",
+    },
+    {
+      title: "Financy",
+      tech: "React - Node - Sequelize - Postgres - Styled Components",
+      description:
+        "Com o Financy fica fácil de gerenciar suas vendas através das categorias cadastradas. Além de Gráficos para acompanhar o desempenho anual, baixar relatório mensal em pdf e mais...",
+      image: QRcode,
+      link: "https://qrcodee.vercel.app",
+      titleLink: "Acesso ao Financy",
     },
   ]
 

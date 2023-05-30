@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 
+import styles from './github.module.css'
+
 const GithubStates = () => {
   const [commits, setCommits] = useState([])
 
@@ -36,10 +38,12 @@ const GithubStates = () => {
   
 
   return (
-    <>
-      <h1>Meus states</h1>
-      <p>Total de commits: {commits.length}</p>
-    </>
+    <div className={styles.container}>
+        <h1 className={styles.title}>Github States</h1>
+        <div className={styles.contentCommit}>
+          <p className={styles.textCommits}>Total de commits: {commits.length}</p>
+        </div>
+    </div>
   )
 }
 

@@ -6,9 +6,11 @@
   flex-direction: column;
   padding: 1rem;
   border-radius: .5rem;
-  box-shadow: .1rem .1rem .3rem #000;
-  transition: .4s;
+  border: .1rem solid #a7a7a73c;
+  box-shadow: .1rem .1rem .4rem #0000009c;
+  background-color: #06466324;
   overflow: hidden;
+  transition: .4s;
 }
 
 .title  {

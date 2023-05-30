@@ -1,9 +1,9 @@
 import React from "react";
 import styles from './card.module.css'
 
-function Card({ title, description, background, link}) {
+function Card({ title, description, link}) {
   return (
-    <a href={link} className={styles.card} style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover'}}>
+    <a href={link} className={styles.card}>
       <strong className={styles.title}>{title}</strong>
       <p className={styles.description}>{description}</p>
     </a>

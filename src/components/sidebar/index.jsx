@@ -8,9 +8,9 @@ import desk from '../../assets/desksetup.svg'
 import dev from '../../assets/dev.svg'
 import globe from  '../../assets/globe.svg'
 import vscodeIcon from '../../assets/vscode-icon.svg'
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
-function Sidebar () {
+function SidebarApp () {
   const [time, setTime] = useState('')
 
     useEffect(() => {
@@ -29,7 +29,7 @@ function Sidebar () {
 
   
   return (
-    <sidebar className='sidebar' >
+    <sidebar className='sidebar'>
       <div className="content-perfil">
         <img src={minhafoto}  className="foto-perfil"/>
         <div>
@@ -89,7 +89,6 @@ function Sidebar () {
           <img src={envelope} alt="globe-icone" />
           Contato
         </Link>
-        {/* vsthemes */}
       </nav>
 
 
@@ -100,4 +99,4 @@ function Sidebar () {
   )
 }
 
-export default Sidebar
+export default SidebarApp
