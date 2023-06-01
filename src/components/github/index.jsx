@@ -6,8 +6,6 @@ const GithubStates = () => {
   const [repos, setRepos] = useState([])
   const [commits, setCommits] = useState([])
 
-  console.log(import.meta.env.VITE_GITHUB)
-
   useEffect(() => {
     async function getRepos() {
       try {
