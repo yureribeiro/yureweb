@@ -1,12 +1,12 @@
 import React from "react";
 import styles from './card.module.css'
-
+import { Link } from "react-router-dom";
 function Card({ title, description, link}) {
   return (
-    <a href={link} className={styles.card}>
+    <Link to={link} className={styles.card}>
       <strong className={styles.title}>{title}</strong>
       <p className={styles.description}>{description}</p>
-    </a>
+    </Link>
     
   )
 }

@@ -1,49 +1,73 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
-
 import styles from './github.module.css'
 
 const GithubStates = () => {
+  const [repos, setRepos] = useState([])
   const [commits, setCommits] = useState([])
 
-  const user = "yureribeiro"
+  console.log(import.meta.env.VITE_GITHUB)
 
   useEffect(() => {
-    async function getStates() {
+    async function getRepos() {
       try {
-        const userReposResponse = await axios.get(`https://api.github.com/users/${user}/repos`, {
-        headers: {
-            Authorization: `token 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`
+        const responseRepos = await axios.get('https://api.github.com/users/yureribeiro/repos', {
+          headers: {
+            Authorization: `Bearer ${import.meta.env.VITE_GITHUB}`
           }
         })
-
-        const userRepos = userReposResponse.data
-  
-        const commitsPromises = userRepos.map(async repo => {
-          const commitsResponse = await axios.get(`https://api.github.com/repos/${user}/${repo.name}/commits`)
-          return commitsResponse.data
-        })
-  
-        const commitsData = await Promise.all(commitsPromises)
-        const allCommits = commitsData.flat()
-
-        setCommits(allCommits)
+        setRepos(responseRepos.data)
       } catch (error) {
         console.log(error)
       }
-    }
-  
-    getStates()
+    }   
+    getRepos()
+    getCommits()
   }, [])
+
+  async function getCommits() {
+    let total = 0
+
+    await Promise.all(repos.map(async (repo) => {
+      try {
+        const response = await axios.get(`https://api.github.com/repos/yureribeiro/${repo.name}/commits`, {
+          headers: {
+            Authorization: `Bearer ${import.meta.env.VITE_GITHUB}`
+          }
+        })
+        total += response.data.length;
+      } catch (error) {
+        console.log(error)
+      }
+    }))
+    setCommits(total)
+  }
   
+  useEffect(() => {
+    if (repos > 0) {
+      getCommits()
+    }
+  }, [repos])
+
+  console.log(repos)
 
   return (
     <div className={styles.container}>
-        <h1 className={styles.title}>Github States</h1>
-        <div className={styles.contentCommit}>
-          <p className={styles.textCommits}>Total de commits: {commits.length}</p>
+        <div className={styles.contentRepos}>
+          { repos.map((item) => {
+            return (
+              <div className={styles.repos}>
+                <p key={item.id} className={styles.textCommits}>{item.name}</p>
+              </div>
+              )
+            })
+          }
         </div>
-    </div>
+       
+        <div className={styles.contentCommit}>
+          <p className={styles.textCommits}>commits públicos: {commits}</p>
+        </div>
+    </div>  
   )
 }
 

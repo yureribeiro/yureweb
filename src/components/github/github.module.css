@@ -1,20 +1,29 @@
 .container {
-  height: 100%;
+  height: 64%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  border: .1rem solid #a7a7a73c;
-  border-radius: .5rem;
-  box-shadow: .1rem .1rem .4rem #0000009c;
-  background-color: #06466324;
-  padding: 1rem;
+  justify-content: space-between;
   gap: 1rem;
 }
 
-.title  {
-    color: #FFD369;
+.contentRepos {
+    margin-top: 1rem;
+    border: .1rem solid #a7a7a73c;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem .4rem #0000009c;
+    background-color: #06466324;
+    height: 80%;
+    overflow: auto;
+    padding: .3rem;
 }
+
+.repos {
+    border: .1rem solid #a7a7a73c;
+    border-radius: .5rem;
+    margin-bottom: .4rem;
+    padding: .4rem;
+}  
 
 .contentCommit {
     border: .1rem solid #a7a7a73c;
@@ -25,5 +34,7 @@
 }
 
 .textCommits  {
+    font-size: .9rem;
+    text-align: center;
     color: #FFD369;
 }

@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio {
+    text-align: center;
+    color: #ffff;
+    margin: 1rem 0;
+}
+
+.contentStates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border: .1rem solid #a7a7a73c;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem .4rem #0000009c;
+    background-color: #06466324;
+    color: #FFD369;
+}
+
+.text {
+    text-align: center;
+    color: #ffff;
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+
+.values {
+    color: #FFD369;
+}

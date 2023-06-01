@@ -12,6 +12,9 @@
     padding: 1rem;
     gap: .5rem;
     text-decoration: none;
+} .container:hover {
+    background-color: #ecb4658f;
+  color: #000;
 }
 
 

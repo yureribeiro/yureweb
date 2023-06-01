@@ -1,7 +1,6 @@
 .card {
   text-decoration: none;
-  min-width: 23%;
-  min-height: 11rem;
+  min-height: 5rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -11,20 +10,20 @@
   background-color: #06466324;
   overflow: hidden;
   transition: .4s;
+} .card:hover {
+  background-color: #ecb4658f;
+  color: #000;
 }
 
 .title  {
-  position: relative;
-  top: 5.5rem;
+  margin-bottom: .5rem;
   font-size: .9rem;
   color: #FFD369;
-  text-shadow: .1rem .1rem .15rem #000;
+  text-shadow: .1rem .1rem .15rem #00000098;
 }
 
 .description {
-  position: relative;
-  top: 5.5rem;
-  color: #d3d3d3;
+  color: #fff;
   font-size: .85rem;
-  text-shadow: .1rem .1rem .15rem #000;
+  text-shadow: .1rem .1rem .15rem #00000081;
 }
