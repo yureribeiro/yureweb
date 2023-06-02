@@ -1,11 +1,13 @@
 import React from "react"
 import SetupItens from '../../components/desksetup'
+import styles from "./desksetup.module.css"
 
 function Desksetup () {
   return (
     <>
-     <h1> meu Setup</h1>
-    <SetupItens/>
+    <section className={styles.container}>
+      <SetupItens/>
+    </section>
     </>
   )
 }
