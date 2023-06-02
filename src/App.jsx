@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom"
 import SidebarApp from './components/sidebar'
 import Dashboard from './contents/dashboard'
 import Projects from './contents/projects'
-import DeskSetup from './contents/desksetup'
+import Desksetup from './contents/desksetup'
 import Redes from './contents/redes'
 import Contact from './contents/contact'
 import VSthemes from './contents/vsThemes'
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/desksetup" element={<DeskSetup />} />
+            <Route path="/desksetup" element={<Desksetup />} />
             <Route path="/redes" element={<Redes />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/vsthemes" element={<VSthemes />} />

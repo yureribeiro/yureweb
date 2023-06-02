@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './sidebar.css'
+import  styles from './sidebar.module.css'
 import minhafoto from '../../assets/minha-foto.jpeg'
 import home from '../../assets/house.svg'
 import github from '../../assets/github-logo.svg'
@@ -29,25 +29,25 @@ function SidebarApp () {
 
   
   return (
-    <sidebar className='sidebar'>
-      <div className="content-perfil">
-        <img src={minhafoto}  className="foto-perfil"/>
+    <sidebar className={styles.sidebar}>
+      <div className={styles.contentPerfil}>
+        <img src={minhafoto}  className={styles.fotoPerfil}/>
         <div>
-          <p className="name-perfil">Yure Ribeiro</p>
+          <p className={styles.namePerfil}>Yure Ribeiro</p>
           <small>developer</small>
         </div>
       </div>
       
-      <nav className="nav">
+      <nav className={styles.nav}>
         <Link 
-          className="link" 
+          className={styles.link} 
           to="/"
           >
           <img src={home} alt="icone-home" />
           Início
         </Link>
         <a
-          className="link" 
+          className={styles.link} 
           href="https://github.com/yureribeiro" 
           target="blank"
           >
@@ -55,35 +55,35 @@ function SidebarApp () {
           GitHub
         </a>
         <Link
-          className="link" 
+          className={styles.link} 
           to="/projects"
           >
           <img src={dev} alt="developer-icone" />
           Projetos
         </Link>
         <Link
-          className="link" 
+          className={styles.link} 
           to="/vsthemes"
           >
           <img src={vscodeIcon} alt="paint-icone" />
           VSCode
         </Link>
         <Link
-          className="link" 
+          className={styles.link} 
           to="/desksetup"
           >
           <img src={desk} alt="setup-icone" />
           Desk Setup
         </Link>
         <Link
-          className="link" 
+          className={styles.link} 
           to="/redes"
           >
           <img src={globe} alt="contato-icone" />
           Redes
         </Link>
         <Link
-          className="link" 
+          className={styles.link} 
           to="/contact"
           >
           <img src={envelope} alt="globe-icone" />
@@ -92,8 +92,8 @@ function SidebarApp () {
       </nav>
 
 
-      <div className="credits">
-        <p className="time">{time}</p>
+      <div className={styles.credits}>
+        <p className={styles.time}>{time}</p>
       </div>
     </sidebar>
   )

@@ -1,9 +1,13 @@
 import React from "react"
+import SetupItens from '../../components/desksetup'
 
-function DeskSetup () {
+function Desksetup () {
   return (
-    <h1>DESK SETUP AQUII!</h1>
+    <>
+     <h1> meu Setup</h1>
+    <SetupItens/>
+    </>
   )
 }
 
-export default DeskSetup
+export default Desksetup

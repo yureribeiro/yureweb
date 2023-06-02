@@ -12,7 +12,7 @@
 }
 
 /* perfil */
-.content-perfil {
+.contentPerfil {
   width: 100%;
   display: flex;
   align-items: center;
@@ -24,13 +24,13 @@
   margin: 1rem 0;
 }
 
-.foto-perfil {
+.fotoPerfil {
   border-radius: 99%;
   width: 2.5rem;
   box-shadow: 0 .15rem .2rem #000;
 }
 
-.name-perfil {
+.namePerfil {
   color: #000;
   font-size: .95rem;
   font-weight: bold;

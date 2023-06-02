@@ -1,6 +1,6 @@
 import React from "react";
 
-function DeskSetup() {
+const SetupItens = () => {
   return (
     <div>
         <a
@@ -62,4 +62,4 @@ function DeskSetup() {
   )
 }
 
-export default DeskSetup
+export default SetupItens
