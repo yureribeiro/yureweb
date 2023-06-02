@@ -54,8 +54,8 @@ const GithubStates = () => {
         <div className={styles.contentRepos}>
           { repos.map((item) => {
             return (
-              <div className={styles.repos}>
-                <p key={item.id} className={styles.textCommits}>{item.name}</p>
+              <div key={item.id} className={styles.repos}>
+                <p  className={styles.textCommits}>{item.name}</p>
               </div>
               )
             })

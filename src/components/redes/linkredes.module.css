@@ -1,24 +1,3 @@
-.containerRedesELinks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.titleContainerRedes {
-  color: #ECB365;
-  margin-bottom: 1rem;
-}
-
-.divLinks {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  padding: 1.5rem;
-}
-
 .containerRedes {
   display: flex;
   flex-direction: column;

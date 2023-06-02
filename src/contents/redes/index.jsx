@@ -5,11 +5,13 @@ import instagramlogo from '../../assets/instagram-logo.svg'
 import githublogo from '../../assets/github-logo.svg'
 import LinkRedes from '../../components/redes'
 
+import styles from "./redes.module.css"
+
 function Redes () {
   return (
-    <div className='containerRedesELinks'>
-      <h2 className='titleContainerRedes'>Me acompanhe nas redes</h2>
-      <div className='divLinks'>
+    <div className={styles.containerRedesELinks}>
+      <h2 className={styles.titleContainerRedes}>Me acompanhe nas redes</h2>
+      <div className={styles.divLinks}>
         <LinkRedes 
           image={youtubelogo}
           title={'Youtube'}
