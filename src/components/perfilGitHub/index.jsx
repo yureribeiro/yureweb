@@ -27,6 +27,7 @@ const PerfilGitHub = () => {
       }, [])
 
     return (
+      <>
         <div className={styles.container}>
             <p className={styles.bio}>Desenvolvedor JavaScript</p>
             <div className={styles.contentStates}>
@@ -39,12 +40,12 @@ const PerfilGitHub = () => {
                     <p className={styles.value}>{following}</p>
                 </div>
             </div>
-                <div className={styles.content}>
-                    <p className={styles.text}>Rep. públicos</p>
-                    <p className={styles.value}>{publicRepos}</p>
-                </div>
-
         </div>
+        <div className={styles.content}>
+            <p className={styles.text}>Rep. públicos</p>
+            <p className={styles.value}>{publicRepos}</p>
+        </div>
+        </>
     )
 }
 
