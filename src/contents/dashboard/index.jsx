@@ -4,18 +4,18 @@ import styles from './dashboard.module.css'
 
 import Card from "../../components/cards"
 import GithubStates from "../../components/github"
-import DashProjects from "../../components/dashProjects"
 import PerfilGitHub from "../../components/perfilGitHub"
+import DashProjects from "../../components/dashProjects"
 
 function Dashboard() {
   return (
     <>
     <div className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.myTitle}>Bem vindo ao meu espaço!</h1>
+        <h1 className={styles.myTitle}>Descubra</h1>
         <p className={styles.myDescription}>
-        Fascinado por programação e tecnologia em geral, estou sempre desenvolvendo aplicações utilizando todo o ecossistema JavaScript, tanto no front-end quanto no back-end e mobile. <br />
-        Aqui você encontrará informações relevantes sobre meus projetos, minhas redes sociais e minhas contribuições no GitHub. Além disso, também posso responder a perguntas sobre meu ambiente de trabalho, como temas e extensões que utilizo no Visual Studio Code.
+        Fascinado por programação e tecnologia em geral, estou sempre desenvolvendo soluções utilizando todo o ecossistema da linguagem JavaScript, tanto no front-end (cliente), quanto no back-end (servidor) e mobile (dispositivos móveis).<br />
+        Aqui você encontrará informações relevantes sobre meus projetos, minhas redes sociais e minhas contribuições no GitHub. Além disso, um pouco sobre meu ambiente de trabalho, como temas e extensões que utilizo no Visual Studio Code.
         </p>
         <DashProjects />
         <section className={styles.cards}>
@@ -28,11 +28,6 @@ function Dashboard() {
             title={'Contato'}
             description={'Email comercial para prestação de serviços'}         
             link={'/contact'}
-          />
-          <Card
-            title={'Desk Setup'}
-            description={'Componentes e links do meu setup de mesa'}
-            link={'/desksetup'}
           />
         </section>
         </div>

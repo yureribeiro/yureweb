@@ -4,7 +4,6 @@ import minhafoto from '../../assets/minha-foto.jpeg'
 import home from '../../assets/house.svg'
 import github from '../../assets/github-logo.svg'
 import envelope from '../../assets/envelope.svg'
-import desk from '../../assets/desksetup.svg'
 import dev from '../../assets/dev.svg'
 import globe from  '../../assets/globe.svg'
 import vscodeIcon from '../../assets/vscode-icon.svg'
@@ -67,13 +66,6 @@ function SidebarApp () {
           >
           <img src={vscodeIcon} alt="paint-icone" />
           VSCode
-        </Link>
-        <Link
-          className={styles.link} 
-          to="/desksetup"
-          >
-          <img src={desk} alt="setup-icone" />
-          Desk Setup
         </Link>
         <Link
           className={styles.link} 

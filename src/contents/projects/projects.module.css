@@ -1,10 +1,12 @@
 .buttonNext {
     position: absolute;
-    top: 40%;
+    top: 44%;
     right: 10%;
     border: .1rem solid #a7a7a73c;
     border-radius: 100%;
     box-shadow: .1rem .1rem .4rem #0000009c;
     background-color: #06466324;
     padding: 1rem;
-}
+} .buttonNext:hover {
+    background-color: #ecb4658f;
+  }
