@@ -6,6 +6,7 @@ import arrowRight from "../../assets/arrow-right.svg"
 import QRcode from "../../assets/QRcode.png"
 import Licurt from "../../assets/licurtmockups.png"
 import BittcsyMockup from '../../assets/bittcsymockups.png'
+import Financy from '../../assets/financymockup.png'
 
 function Projects () {
 
@@ -27,7 +28,7 @@ function Projects () {
       libs: "API Rest",
       description:
         "Com o Financy fica fácil de gerenciar suas vendas através das categorias cadastradas. Além de Gráficos para acompanhar o desempenho anual, baixar relatório mensal em pdf e mais...",
-      image: QRcode,
+      image: Financy,
       link: "https://dashsistem.vercel.app",
       github: "https://github.com/yureribeiro/Dashboard",
       titleLink: "Acesse o Financy",
