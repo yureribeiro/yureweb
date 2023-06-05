@@ -54,7 +54,7 @@ const GithubStates = () => {
   return (
     <div className={styles.container}>
         <div className={styles.contentCommit}>
-          <p className={styles.textCommits}>commits públicos: {commits}</p>
+          <p className={styles.textCommits}>commits públicos : {commits}</p>
         </div>
           <div className={styles.contentRepos}>
             { repos.map((item) => {

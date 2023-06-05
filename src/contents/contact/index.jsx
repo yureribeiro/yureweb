@@ -87,7 +87,6 @@ function Contact () {
               WhatsApp
               </a>
       </div>
-     
     </form>
     </section>
   )

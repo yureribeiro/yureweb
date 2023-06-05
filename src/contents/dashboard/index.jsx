@@ -33,7 +33,7 @@ function Dashboard() {
         </section>
         </div>
           <section className={styles.gitStates}>
-            <h1 className={styles.title}>GitHub status</h1>
+            <h1 className={styles.title}>GitHub</h1>
             <PerfilGitHub />
             <GithubStates />
           </section>
