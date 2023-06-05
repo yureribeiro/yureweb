@@ -32,13 +32,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 1rem;
   gap: 1rem;
 }
 
 .gitStates {
   height: 100%;
-  width: 30%;
+  width: 40%;
   align-items: center;
   border: .1rem solid #a7a7a73c;
   border-radius: .5rem;

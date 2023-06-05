@@ -19,7 +19,7 @@
 }
 
 .titleRedes {
-  color: #ECB365;
+  color: #FFD369;
 }
 
 .descriptionRedes {
@@ -34,7 +34,7 @@
   padding: .3rem;
   border-radius: .5rem;
   box-shadow: .1rem .1rem .2rem #0000006b;
-  color: #e8a548;
+  color: #FFD369;
   width: 40%;
   transition: .4s;
 } .linkRedes:hover {

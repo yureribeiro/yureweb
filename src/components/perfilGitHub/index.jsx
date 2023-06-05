@@ -39,11 +39,11 @@ const PerfilGitHub = () => {
                     <p className={styles.text}>Seguindo</p>
                     <p className={styles.value}>{following}</p>
                 </div>
+                <div className={styles.content}>
+                    <p className={styles.text}>Repos pub.</p>
+                    <p className={styles.value}>{publicRepos}</p>
+                </div>
             </div>
-        </div>
-        <div className={styles.content}>
-            <p className={styles.text}>Rep. públicos</p>
-            <p className={styles.value}>{publicRepos}</p>
         </div>
         </>
     )

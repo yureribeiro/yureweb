@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 import styles from './github.module.css'
 
+import Linguages from "../../components/linguages"
+
 const GithubStates = () => {
   const [repos, setRepos] = useState([])
   const [commits, setCommits] = useState([])
@@ -51,20 +53,20 @@ const GithubStates = () => {
 
   return (
     <div className={styles.container}>
-        <div className={styles.contentRepos}>
-          { repos.map((item) => {
-            return (
-              <div key={item.id} className={styles.repos}>
-                <p  className={styles.textCommits}>{item.name}</p>
-              </div>
-              )
-            })
-          }
-        </div>
-       
         <div className={styles.contentCommit}>
           <p className={styles.textCommits}>commits públicos: {commits}</p>
         </div>
+          <div className={styles.contentRepos}>
+            { repos.map((item) => {
+              return (
+                <div key={item.id} className={styles.repos}>
+                  <p  className={styles.textCommits}>{item.name}</p>
+                </div>
+                )
+              })
+            }
+          </div>
+        <Linguages />
     </div>  
   )
 }
