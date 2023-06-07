@@ -23,6 +23,17 @@ function Projects () {
       titleLink: "Google Play",
     },
     {
+      title: "Licurt",
+      tech: "HTML5 - CSS - JavaScript",
+      libs: "Shortcut API",
+      description:
+        "Ideal para quem compartilha muitos links, para evitar links enormes, use o Licurt para obter um link curto que redireciona para o seu link original. - (estatísticas avançadas em breve)",
+      image: Licurt,
+      link: "https://qrcodee.vercel.app",
+      github: "https://github.com/yureribeiro/Licurt",
+      titleLink: "Visite o Site",
+    },
+    {
       title: "Financy",
       tech: "React.js - Node.js - Sequelize - PostgresSQL - Styled Components",
       libs: "API Rest",
@@ -43,17 +54,6 @@ function Projects () {
       link: "https://qrcodee.vercel.app",
       github: "https://github.com/yureribeiro/QRCode",
       titleLink: "Gere seu QRCODE",
-    },
-    {
-      title: "Licurt",
-      tech: "HTML5 - CSS - JavaScript",
-      libs: "Shortcut API",
-      description:
-        "Ideal para quem compartilha muitos links, para evitar links enormes, use o Licurt para obter um link curto que redireciona para o seu link original. - (estatísticas avançadas em breve)",
-      image: Licurt,
-      link: "https://qrcodee.vercel.app",
-      github: "https://github.com/yureribeiro/Licurt",
-      titleLink: "Visite o Site",
     },
   ]
 

@@ -2,8 +2,11 @@ import React, { useState } from "react"
 import emailjs from '@emailjs/browser'
 import styles from './contact.module.css'
 import wpplogo from '../../assets/whatsapp-logo.svg'
+import ConfirmEmail from "../../components/confirmEmail"
 
 function Contact () {
+  const [confirm, setConfirm] = useState(false)
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -28,6 +31,7 @@ function Contact () {
       setName('')
       setEmail('')
       setMessage('')
+      setConfirm(true)
     }, (err) => {
       console.log("ERRO: ", err)
     })
@@ -84,8 +88,15 @@ function Contact () {
               src={wpplogo} 
               alt="whatsapp"
               />
-              WhatsApp
-              </a>
+            WhatsApp
+            </a>
+            {confirm ? (             
+              <div className={styles.confirmContainer}>
+                <ConfirmEmail />
+              </div>
+              ) : (
+              <p className={styles.none}>.</p>
+            )}
       </div>
     </form>
     </section>
