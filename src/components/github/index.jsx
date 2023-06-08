@@ -6,7 +6,13 @@ import Linguages from "../../components/linguages"
 
 const GithubStates = () => {
   const [repos, setRepos] = useState([])
-  const [commits, setCommits] = useState([])
+  const [commits, setCommits] = useState(0)
+
+  useEffect(() => {
+    if (repos.length > 0) {
+      getCommits()
+    }
+  }, [repos])
 
   useEffect(() => {
     async function getRepos() {
@@ -22,10 +28,10 @@ const GithubStates = () => {
       }
     }   
     getRepos()
-    getCommits()
   }, [])
 
   async function getCommits() {
+
     let total = 0
 
     await Promise.all(repos.map(async (repo) => {
@@ -42,21 +48,17 @@ const GithubStates = () => {
     }))
     setCommits(total)
   }
-  
-  useEffect(() => {
-    if (repos > 0) {
-      getCommits()
-    }
-  }, [repos])
 
-  console.log(repos)
+  console.log(commits)
 
   return (
     <div className={styles.container}>
         <div className={styles.contentCommit}>
-          <p className={styles.textCommits}>commits públicos : {commits}</p>
+          <p className={styles.textCommits}>commits públicos:</p>
+          <p className={styles.textCommits}>{commits}</p>
         </div>
           <div className={styles.contentRepos}>
+            <p className={styles.text}>Repos públicos:</p>
             { repos.map((item) => {
               return (
                 <div key={item.id} className={styles.repos}>

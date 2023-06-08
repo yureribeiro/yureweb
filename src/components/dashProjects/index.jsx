@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import styles from './dashProject.module.css'
-import projects from '../../assets/socialmidias.jpg'
+import projects from '../../assets/projetosimage.jpg'
 
 const DashProjects = () => {
 
