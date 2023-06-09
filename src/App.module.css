@@ -23,9 +23,9 @@
   min-width: 980px;
   height: 100vh;
   padding: 2.5rem;
-  background: linear-gradient(170deg, #04293A 20%, #010101f9 70%);
-  animation: gradientAnimation 10s linear infinite;
-  background-size: 150% 150%
+  background: linear-gradient(170deg, #063449 30%, #010101f9 60%);
+  animation: gradientAnimation 8s linear infinite;
+  background-size: 200% 200%
 }
 
 .container {
