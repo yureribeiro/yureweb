@@ -7,11 +7,25 @@
   font-family: 'Roboto', Arial, Helvetica;
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .App {
   min-width: 980px;
   height: 100vh;
   padding: 2.5rem;
-  background: linear-gradient(170deg, #04293A 20%, #ECB365 70%);
+  background: linear-gradient(170deg, #04293A 20%, #010101f9 70%);
+  animation: gradientAnimation 10s linear infinite;
+  background-size: 150% 150%
 }
 
 .container {

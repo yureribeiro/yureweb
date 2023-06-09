@@ -12,7 +12,7 @@ const DashProjects = () => {
         style={{ backgroundImage: `url(${projects})`, backgroundSize: 'cover'}}
         to='/projects'
         >
-            <h1 className={styles.title}>Portifolio</h1>
+            <h1 className={styles.title}>Projetos</h1>
         </Link>
     )
 }

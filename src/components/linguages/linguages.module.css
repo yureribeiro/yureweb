@@ -47,6 +47,7 @@
     grid-template-columns: repeat(2, 1fr);
     padding: .5rem;
     gap: .2rem;
+    font-size: small;
 }
 
 .flex {
@@ -60,6 +61,7 @@
     color: #fff;
     font-size: .9rem;
 }
+
 
 .jsPorcent {
     color: #FFD369;
