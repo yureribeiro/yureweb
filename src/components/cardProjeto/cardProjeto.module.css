@@ -4,6 +4,18 @@
     padding: 0 2rem;
 }
 
+.titleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    color: #FFD369;
+    padding: 1rem;
+    font-size: 4rem;
+}
+
 .buttonsContent {
     width: 100%;
     display: flex;
@@ -28,18 +40,14 @@
 } .links:hover {
     background-color: #ecb4658f;
     color: #000;
-  }
-
-.titleContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.title {
-    color: #FFD369;
-    padding: 1rem;
-    font-size: 4rem;
+.imageContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    align-items: center;
+    gap: 2rem;
 }
 
 .tecsContent {
@@ -58,14 +66,6 @@
     margin-top: 1rem;
 }
 
-.imageContent {
-    display: flex;
-    justify-content: space-between;
-    padding: 0rem 2rem;
-    align-items: center;
-    gap: 2rem;
-}
-
 .image {
     position: relative;
     top: -10%;
@@ -78,3 +78,34 @@
 }
 
 
+@media (max-width: 760px) {
+    .container {
+        padding: 0 .5rem;
+    }
+    .title {
+        color: #FFD369;
+        padding: 1rem 0;
+        font-size: 3rem;
+    }
+    .buttonsContent {
+        gap: 2rem;
+        padding-top: 1.5rem;
+    }
+    .imageContent {
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0rem 1rem;
+        align-items: center;
+        gap: 0;
+    }
+    .tecsContent {
+        gap: 1rem;
+        padding: 0;
+    }
+    .image {
+        position: relative;
+        top: -10%;
+        width: 100%;
+        z-index: 1;
+    }
+}

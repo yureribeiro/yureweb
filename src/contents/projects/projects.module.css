@@ -10,3 +10,12 @@
 } .buttonNext:hover {
     background-color: #ecb4658f;
   }
+
+  @media (max-width: 760px) {
+    .buttonNext {
+        position: absolute;
+        top: 42%;
+        right: 10%;
+        padding: .7rem;
+    }
+  }

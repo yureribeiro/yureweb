@@ -104,3 +104,16 @@
   top: 7%;
   transition: .4s;
 }
+
+@media (max-width: 760px) {
+  .title {
+    text-align: center;
+    margin-top: 0rem;
+  }
+  .form {
+    width: 100%;
+  }
+  .buttonsDiv {
+    gap: 1rem;
+  }
+}

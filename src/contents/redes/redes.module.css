@@ -18,3 +18,12 @@
     gap: 1rem;
     padding: 1.5rem;
   }
+
+  @media (max-width: 760px) {
+    .divLinks {
+      display: flex;
+      flex-direction: column;
+      padding: .5rem;
+      gap: .5rem;
+    }
+  }

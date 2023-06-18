@@ -50,7 +50,7 @@
     min-width: 90%;
     min-height: 100vh;
     height: 100%;
-    padding: 1rem;
+    padding: .8rem;
     background: linear-gradient(170deg, #063449 30%, #010101f9 60%);
     animation: gradientAnimation 8s linear infinite;
     background-size: 200% 200%;

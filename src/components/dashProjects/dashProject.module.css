@@ -16,7 +16,16 @@
     box-shadow: .2rem .2rem .7rem #000000d9;
 }
 
-
 .title  {
     color: #FFD369;
+}
+
+@media (max-width: 760px) {
+    .container {
+        width: 100%;
+        height: 10rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
 }
