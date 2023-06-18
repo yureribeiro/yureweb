@@ -67,7 +67,7 @@
   color: #000;
 }
 
- .link img {
+.link img {
   width: 1.3rem;
 }
 
@@ -80,4 +80,21 @@
   border: .1rem solid #ecb4657d;
   border-radius: .5rem;
   padding: .3rem .5rem;
+}
+
+@media (max-width: 760px) {
+  .contentPerfil {
+    width: 80%;
+    justify-content: space-around;
+  }
+  .fotoPerfil {
+    width: 3rem;
+    box-shadow: 0 .15rem .2rem #000;
+  }
+  .namePerfil {
+    font-size: 1rem;
+  }
+  .time {
+    display: none;
+  }
 }

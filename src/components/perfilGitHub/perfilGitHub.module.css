@@ -41,3 +41,9 @@
 .values {
     color: #FFD369;
 }
+
+@media (max-width: 760px) {
+    .bio {
+        margin: 0 0 1rem 0;
+    }
+}
