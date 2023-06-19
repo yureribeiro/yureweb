@@ -55,4 +55,8 @@
       .contentCommit {
         display: none;
     }
+    .contentRepos {
+        height: 20%;
+        overflow: auto;
+    }
 }

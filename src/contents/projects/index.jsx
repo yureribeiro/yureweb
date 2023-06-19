@@ -84,10 +84,9 @@ function Projects () {
       <button 
         onClick={handleNextProject} 
         className={styles.buttonNext}>
-       <img src={arrowRight} alt="next" />
+       <img src={arrowRight} alt="proximo" />
       </button>
     </>
-
   )
 }
 
