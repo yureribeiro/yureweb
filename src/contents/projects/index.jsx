@@ -38,11 +38,11 @@ function Projects () {
       tech: "React.js - Node.js - Sequelize - PostgresSQL - Styled Components",
       libs: "API Rest",
       description:
-        "Com o Financy fica fácil de gerenciar suas vendas através das categorias cadastradas. Além de Gráficos para acompanhar o desempenho anual, baixar relatório mensal em pdf e mais...",
+        "*Projeto sendo migrado para NEXT.JS* Com o Financy fica fácil de gerenciar suas vendas através das categorias cadastradas. Além de Gráficos para acompanhar o desempenho anual, baixar relatório mensal em pdf e mais...",
       image: Financy,
       link: "https://dashsistem.vercel.app",
       github: "https://github.com/yureribeiro/Dashboard",
-      titleLink: "Acesse o Financy",
+      titleLink: "Manutenção",
     },
     {
       title: "QRcodee",
