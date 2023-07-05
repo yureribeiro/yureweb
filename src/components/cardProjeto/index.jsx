@@ -1,12 +1,15 @@
 import React from "react"
 import styles from "./cardProjeto.module.css"
 
+
 const CardProject = ({title, tech, libs, description, link, github, titleLink, image}) => {
+
 
     return (
         <div className={styles.container}>
             <section className={styles.titleContent}>
-              <h1 className={styles.title}>{title}</h1>
+                  <h1 className={styles.title}>{title}</h1>
+                 
               <p className={styles.description}>{description}</p>
                 <div className={styles.buttonsContent}>
                     <a href={github} target="_blank" className={styles.links}>GitHub</a>

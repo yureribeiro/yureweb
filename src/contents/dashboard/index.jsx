@@ -15,7 +15,7 @@ function Dashboard() {
       <div className={styles.content}>
         <h1 className={styles.myTitle}>Descubra</h1>
         <p className={styles.myDescription}>
-        Fascinado por programação e tecnologia em geral, estou sempre desenvolvendo soluções utilizando todo o ecossistema da linguagem JavaScript, tanto no front-end (cliente), quanto no back-end (servidor) e mobile (dispositivos móveis).<br />
+        Fascinado por programação e tecnologia em geral, estou sempre desenvolvendo soluções utilizando tecnologias do ecossistema JavaScript, tanto no front-end (cliente), quanto no back-end (servidor) e mobile (dispositivos móveis).<br />
         Aqui você encontrará informações relevantes sobre meus projetos, minhas redes sociais e minhas contribuições no GitHub. Além disso, um pouco sobre meu ambiente de trabalho, como temas e extensões que utilizo no Visual Studio Code.
         </p>
         <DashProjects />

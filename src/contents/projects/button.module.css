@@ -1,6 +1,6 @@
 .buttonNext {
     position: absolute;
-    top: 44%;
+    top: 37%;
     right: 10%;
     border: .1rem solid #a7a7a73c;
     border-radius: 100%;
@@ -11,11 +11,9 @@
     background-color: #ecb4658f;
   }
 
-  @media (max-width: 760px) {
+
+  @media(max-width: 740px) {
     .buttonNext {
-        position: absolute;
-        top: 42%;
-        right: 10%;
-        padding: .7rem;
+        top: 10%;
     }
   }

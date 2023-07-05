@@ -1,14 +1,14 @@
-import React, {useState}from "react"
+import React, { useState } from "react"
 import CardProject from "../../components/cardProjeto"
-import styles from "./projects.module.css"
-
-import arrowRight from "../../assets/arrow-right.svg"
 import QRcode from "../../assets/QRcode.png"
 import Licurt from "../../assets/licurtmockups.png"
 import BittcsyMockup from '../../assets/bittcsymockups.png'
 import Financy from '../../assets/financymockup.png'
+import arrowRight from "../../assets/arrow-right.svg"
+import styles from "./button.module.css"
 
 function Projects () {
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0)
 
   const projectData = [
     {
@@ -57,11 +57,8 @@ function Projects () {
     },
   ]
 
-  const [currentProjectIndex, setCurrentProjectIndex] = useState(0)
-
   const handleNextProject = () => {
     setCurrentProjectIndex((prevIndex) => {
-      // se exceder os projetos disponíveis, redefine-o para 0
       const newIndex = prevIndex + 1
       return newIndex >= projectData.length ? 0 : newIndex
     })
@@ -70,8 +67,8 @@ function Projects () {
   const currentProject = projectData[currentProjectIndex]
 
   return (
-    <>
-        <CardProject 
+    <div>
+          <CardProject 
           title={currentProject.title}
           libs={currentProject.libs}
           tech={currentProject.tech}
@@ -81,12 +78,13 @@ function Projects () {
           github={currentProject.github}
           titleLink={currentProject.titleLink}
         />
-      <button 
-        onClick={handleNextProject} 
-        className={styles.buttonNext}>
-       <img src={arrowRight} alt="proximo" />
-      </button>
-    </>
+
+                  <button 
+                    onClick={handleNextProject} 
+                    className={styles.buttonNext}>
+                   <img src={arrowRight} alt="proximo" />
+                  </button> 
+      </div>
   )
 }
 

@@ -10,6 +10,12 @@
     justify-content: center;
 }
 
+.divTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .title {
     color: #FFD369;
     padding: 1rem;
@@ -76,6 +82,7 @@
 .description {
     color: #ffff;
 }
+
 
 
 @media (max-width: 760px) {
